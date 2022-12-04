@@ -1,3 +1,4 @@
+import data from "./data.js"
 import userData from "./data.js"
 
 /* Totally Private Data Farm 
@@ -24,6 +25,15 @@ array should look like this when you're done:
 Read about toDateString() for info on formatting a readable date. 
 
 */
-function transformData(data) {}
+
+// Map through each oject array and return fullName of `name.first name.last` and birthday: `dob.date.toDateString()`
+
+function transformData(data) {
+  const users = data.map((user) => ({
+    fullName: user.name.first + " " + user.name.last,
+    birthday: new Date(user.dob.date).toDateString(),
+  }))
+  return users
+}
 
 console.log(transformData(userData))
