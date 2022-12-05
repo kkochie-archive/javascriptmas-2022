@@ -18,8 +18,11 @@ const whisper = (str) =>
     ? `shh... ${str.slice(0, -1).toLowerCase()}`
     : `shh... ${str.toLowerCase()}`
 
-// Using replace
-const whisper = (str) => `shh... ${str.toLowerCase().replace("!", "")}`
+// Using replace but doesn't really apply because would replace all !, not just at end of sentence
+const whisper2 = (str) => `shh... ${str.toLowerCase().replace("!", "")}`
 
 console.log(whisper("PLEASE STOP SHOUTING."))
 console.log(whisper("MA'AM, this is a Wendy's!"))
+
+console.log(whisper2("PLEASE STOP SHOUTING."))
+console.log(whisper2("MA'AM, this is a Wendy's!"))
