@@ -12,7 +12,6 @@ function altCaps(str) {
     .split("")
     .map((el, i) => (i % 2 === 0 ? el.toUpperCase() : el.toLowerCase()))
     .join("")
-  return newStr
 }
 
 console.log(altCaps("When you visit Portland you have to go to VooDoo Donuts"))
