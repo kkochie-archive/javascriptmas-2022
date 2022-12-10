@@ -1,6 +1,4 @@
-function sortByLength(strs) {
-  return strs.sort((a, b) => a.length - b.length)
-}
+const sortByLength = (strs) => strs.sort((a, b) => a.length - b.length)
 
 /**
  * Test Suite
