@@ -74,11 +74,3 @@ console.log(emojifyWord("elephant"))
 
 console.log(emojifyPhrase("I :heart: my :cat:"))
 console.log(emojifyPhrase("I :heart: my :elephant:"))
-
-// function emojifyPhrase(phrase) {
-//   const myPhrase = phrase
-//     .split(" ")
-//     .map((each) => emojifyWord(each))
-//     .join(" ")
-//   return myPhrase
-// }
