@@ -32,12 +32,3 @@ to the displayTables function call.
 
 const displayTables = () => getReadyTables().map((el) => `<div class="table">${el}</div>`).join("")
 document.getElementById('tables').innerHTML = displayTables()
-
-
-
-///
-
-// const getReadyTables = () => [Math.round(Math.random()*20) + 1, Math.round(Math.random()*20) + 1];
-// const displayTables = () => getReadyTables().map(num => `<div class="table">${num}</div>`).join('');
-// const tables = document.querySelector('#tables');
-// tables.innerHTML = displayTables();
