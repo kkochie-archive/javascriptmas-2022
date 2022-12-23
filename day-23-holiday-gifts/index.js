@@ -16,6 +16,7 @@ import products from "./data.js";
     ... continued
 */
 
+const sortProducts = (data) => data.sort((a, b) => a.price - b.price)
 function sortProducts(data){
    return data.sort((a, b) => a.price - b.price)
 }
